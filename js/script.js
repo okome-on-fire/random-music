@@ -88,7 +88,7 @@ $(function() {
                 $('.tx-title-result').text('〇〇〇〇');
                 var tweet = '歌う曲の番号は「' + data[i].number + '」です';
             }
-            $('.btn-share-twitter').attr('href', 'http://twitter.com/intent/tweet?url=http://tsukiyoni.oteage.net/&text=' + tweet + '&hashtags=sideMランダム選曲ジェネレーター');
+            $('.btn-share-twitter').attr('href', 'http://twitter.com/intent/tweet?url=https://okome-on-fire.github.io/random-music/&text=' + tweet + '&hashtags=sideMランダム選曲ジェネレーター');
         })
     });
 
