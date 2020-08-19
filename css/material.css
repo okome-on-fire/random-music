@@ -1,0 +1,241 @@
+/* 共通 */
+body {
+    height: auto;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+h1,h2,h3 {
+    margin: 0;
+}
+button {
+    outline: none;
+}
+ul,li {
+    list-style: none;
+    padding: 0;
+}
+
+/* ヘッダー */
+header {
+    text-align: center;
+    padding: 20px;
+    color: #fff;
+    background-color: #222;
+}
+header h1 {
+    font-size: 24px;
+}
+
+/* フッター */
+footer {
+    width: 100%;
+    background-color: #222;
+    padding: 10px;
+    text-align: center;
+    color: #fff;
+}
+footer p {
+    margin: 0;
+    font-size: 12px;
+    line-height: 1.8;
+}
+
+/* メイン共通 */
+.main {
+    padding: 0 10px;
+}
+.main-innner {
+    max-width: 90%;
+    margin: 30px auto;
+    border: 1px solid #222;
+    border-radius: 10px;
+    padding: 0 0px 20px;
+    background-color: #fff;
+    text-align: left;
+    overflow: hidden;
+}
+.main-innner-ttl {
+    color: #fff;
+    padding: 10px 20px;
+    margin: 0 0 20px;
+    background-color: #222;
+}
+.wrap-box {
+    padding: 0 20px;
+}
+.js-toggle {
+    display: none;
+}
+
+/* ナビ */
+.box-nav {
+    text-align: center;
+}
+.box-nav .nav-lst {
+    font-size: 0;
+}
+.box-nav .nav-item {
+    display: inline-block;
+    margin-right: 10px;
+    padding: 10px 15px 10px 20px;
+    background-color: #333;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 14px;
+    position: relative;
+}
+.box-nav .nav-item:last-child {
+    margin-right: 0;
+}
+.box-nav .nav-item:hover {
+    opacity: 0.8;
+}
+
+/* シート */
+iframe {
+    width: 100%;
+}
+#sheets-viewport {
+    width: 100%;
+}
+
+/* イベントまとめ */
+.box-event .red {
+    display: inline-block;
+    background-color: #f00;
+    color: #fff;
+    padding: 3px;
+}
+.box-event .lightRed {
+    display: inline-block;
+    background-color: #f4c7c3;
+    padding: 3px;
+}
+.box-event .green {
+    display: inline-block;
+    background-color: #b7e1cd;
+    padding: 3px;
+}
+
+/* ワートレ */
+.box-wt .box-unit {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+
+
+/* 更新履歴 */
+.box-news {
+    padding-bottom: 0;
+}
+.box-news .main-innner-ttl {
+    font-size: 20px;
+}
+.box-news li {
+    text-align: left;
+    font-size: 12px;
+    padding: 10px 0;
+    border-bottom: 1px dotted #ccc;
+    overflow: hidden;
+}
+.box-news li:first-child {
+    padding-top: 0;
+}
+.box-news li:last-child {
+    border: none;
+    padding-bottom: 0;
+}
+.box-news .tx-date {
+    display: inline-block;
+    width: 80px;
+    vertical-align: top;
+}
+.tx-description {
+    display: inline-block;
+    margin: 0;
+}
+@media screen and (max-width: 440px) {
+    .box-news .tx-date {
+        width: 20%;
+    }
+    .tx-description {
+        width: 78%;
+    }
+}
+
+/* 戻る */
+.box-back {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.box-back a {
+    display: inline-block;
+    padding: 10px 15px 10px 20px;
+    background-color: #f27f0c;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 14px;
+    position: relative;
+}
+.box-back a:hover {
+    text-decoration: none;
+    color: #fff;
+    opacity: 0.8;
+}
+.box-back a::before {
+    content: "";
+    position: absolute;
+    left: 10px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    box-sizing: border-box;
+    width: 4px;
+    height: 4px;
+    border: 4px solid transparent;
+    border-left: 4px solid #fff;
+}
+
+/* ページトップに */
+#page-top {
+    position: fixed;
+    z-index: 900;
+    right: 40px;
+    bottom: 45px;
+}
+#page-top a {
+    display: block;
+    font-size: 0;
+}
+#page-top a::before {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 50px;
+    padding: 0 1px;
+    border: 1px solid #fff;
+    background-color: #242424;
+    box-shadow: 0 1px 6px 0 rgba(0,0,0,.2);
+    color: white;
+    line-height: 1;
+    text-align: center;
+    transition: all ease .5s;
+    border-radius: 1000px;
+}
+#page-top a::after {
+    position: absolute;
+    top: 7px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 14px;
+    height: 14px;
+    margin: auto;
+    border-top: solid 4px #fff;
+    border-right: solid 4px #fff;
+    content: "";
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg)
+}
